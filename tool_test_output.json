@@ -1,0 +1,115 @@
+{
+    "summary": {
+        "num_errors": 0,
+        "num_failures": 0,
+        "num_skips": 0,
+        "num_tests": 1
+    },
+    "tests": [
+        {
+            "data": {
+                "inputs": {
+                    "celltype_csv": {
+                        "id": "0516e544952fa2f0",
+                        "src": "hda"
+                    },
+                    "channel_files": {
+                        "id": "1ede5472440da15c",
+                        "src": "hdca"
+                    },
+                    "dataset_names": {
+                        "id": "1ede5472440da15c",
+                        "src": "hda"
+                    },
+                    "label_files": {
+                        "id": "dcd0d9b603ea73d0",
+                        "src": "hdca"
+                    },
+                    "quant_csvs": {
+                        "id": "84bd0de2e3ad9335",
+                        "src": "hdca"
+                    }
+                },
+                "job": {
+                    "command_line": "cp inputs.json /visinity/ && cd /visinity/ && cp \"/Users/sargentl/code/tools-mti/tools/visinity/archive_generate.py\" \"./archive_generate.py\" && vis-env python archive_generate.py inputs.json '/private/var/folders/2d/g1vdzd1n6fv1fgxtlx8vrb189nw7dq/T/tmpxeye8qmk/job_working_directory/000/6/outputs/dataset_2e59c5aa-b5ae-4e9f-909c-a5f4cf9c1fab.dat';",
+                    "command_version": "1.17",
+                    "copied_from_job_id": null,
+                    "create_time": "2024-09-05T18:22:15.856369",
+                    "dependencies": [],
+                    "exit_code": 0,
+                    "external_id": "78098",
+                    "galaxy_version": "24.1",
+                    "handler": null,
+                    "history_id": "1ede5472440da15c",
+                    "id": "d708775719b4d925",
+                    "inputs": {
+                        "celltype_csv": {
+                            "id": "0516e544952fa2f0",
+                            "src": "hda",
+                            "uuid": "6c01cbae-2be0-4dd5-90fa-adf6d15cc9f6"
+                        },
+                        "channel_files1": {
+                            "id": "dcd0d9b603ea73d0",
+                            "src": "hda",
+                            "uuid": "8bae53b3-4a54-4270-99b4-3a994778afc1"
+                        },
+                        "dataset_names": {
+                            "id": "1ede5472440da15c",
+                            "src": "hda",
+                            "uuid": "7c0bf758-4970-4b9e-a5d3-59e1cf7b5261"
+                        },
+                        "label_files1": {
+                            "id": "84bd0de2e3ad9335",
+                            "src": "hda",
+                            "uuid": "d5784f3d-9086-440b-b629-5a98dea0630c"
+                        },
+                        "quant_csvs1": {
+                            "id": "32716db6f0cc5594",
+                            "src": "hda",
+                            "uuid": "1f63c6c0-e6e1-471d-8399-1bf3c02e3cf6"
+                        }
+                    },
+                    "job_messages": [],
+                    "job_metrics": [],
+                    "job_runner_name": null,
+                    "job_stderr": "",
+                    "job_stdout": "",
+                    "model_class": "Job",
+                    "output_collections": {},
+                    "outputs": {
+                        "out_archive": {
+                            "id": "d708775719b4d925",
+                            "src": "hda",
+                            "uuid": "2e59c5aa-b5ae-4e9f-909c-a5f4cf9c1fab"
+                        }
+                    },
+                    "params": {
+                        "__input_ext": "\"input\"",
+                        "channel_files": "{\"values\": [{\"id\": 1, \"src\": \"hdca\"}]}",
+                        "chromInfo": "\"/private/tmp/planemo/groot/tool-data/shared/ucsc/chrom/?.len\"",
+                        "dbkey": "\"?\"",
+                        "label_files": "{\"values\": [{\"id\": 2, \"src\": \"hdca\"}]}",
+                        "n_radius": "\"20\"",
+                        "quant_csvs": "{\"values\": [{\"id\": 3, \"src\": \"hdca\"}]}"
+                    },
+                    "state": "ok",
+                    "stderr": "/opt/conda/lib/python3.9/site-packages/ome_types/_convenience.py:105: FutureWarning: The default XML parser will be changing from 'xmlschema' to 'lxml' in version 0.4.0.  To silence this warning, please provide the `parser` argument, specifying either 'lxml' (to opt into the new behavior), or'xmlschema' (to retain the old behavior).\n  d = to_dict(os.fspath(xml), parser=parser, validate=validate)\n",
+                    "stdout": "Using 8 worker threads based on detected CPU count.\n\nAppending input images\n    1: /private/var/folders/2d/g1vdzd1n6fv1fgxtlx8vrb189nw7dq/T/tmpxeye8qmk/files/d/5/7/dataset_d5784f3d-9086-440b-b629-5a98dea0630c.dat\n\nPyramid level sizes:\n    level 1: 2048x2048 (original size)\n    level 2: 1024x1024\n\nResizing channels for level 2 (2048x2048 -> 1024x1024)\n\r    1: 25%\r    1: 100%\n\nLoading 7.152557373046875e-07\nNo Neighborhood\nP Done Data Loading, 0.00727081298828125\nP Ball Tree, 0.0005772113800048828\nP Metadata, 2.384185791015625e-07\nP Query, 0.00044465065002441406\nMax Time 3.933906555175781e-05\nCreating Matrix img_1\nCreated Matrix img_1\nCreating Umap Embedding (40, 4)\nCreating KD Tree\nMetadata Time 1.4444563388824463\nprocessing duration:\n\t13.944474697113037 sec (0.23240791161855062 mins)\n",
+                    "tool_id": "visinity_preprocess",
+                    "tool_stderr": "/opt/conda/lib/python3.9/site-packages/ome_types/_convenience.py:105: FutureWarning: The default XML parser will be changing from 'xmlschema' to 'lxml' in version 0.4.0.  To silence this warning, please provide the `parser` argument, specifying either 'lxml' (to opt into the new behavior), or'xmlschema' (to retain the old behavior).\n  d = to_dict(os.fspath(xml), parser=parser, validate=validate)\n",
+                    "tool_stdout": "Using 8 worker threads based on detected CPU count.\n\nAppending input images\n    1: /private/var/folders/2d/g1vdzd1n6fv1fgxtlx8vrb189nw7dq/T/tmpxeye8qmk/files/d/5/7/dataset_d5784f3d-9086-440b-b629-5a98dea0630c.dat\n\nPyramid level sizes:\n    level 1: 2048x2048 (original size)\n    level 2: 1024x1024\n\nResizing channels for level 2 (2048x2048 -> 1024x1024)\n\r    1: 25%\r    1: 100%\n\nLoading 7.152557373046875e-07\nNo Neighborhood\nP Done Data Loading, 0.00727081298828125\nP Ball Tree, 0.0005772113800048828\nP Metadata, 2.384185791015625e-07\nP Query, 0.00044465065002441406\nMax Time 3.933906555175781e-05\nCreating Matrix img_1\nCreated Matrix img_1\nCreating Umap Embedding (40, 4)\nCreating KD Tree\nMetadata Time 1.4444563388824463\nprocessing duration:\n\t13.944474697113037 sec (0.23240791161855062 mins)\n",
+                    "update_time": "2024-09-05T18:23:06.006738",
+                    "user_email": "planemo@galaxyproject.org"
+                },
+                "status": "success",
+                "test_index": 0,
+                "time_seconds": 99.9618489742279,
+                "tool_id": "visinity_preprocess",
+                "tool_version": "1.17+galaxy0"
+            },
+            "has_data": true,
+            "id": "visinity_preprocess-0"
+        }
+    ],
+    "version": "0.1"
+}
